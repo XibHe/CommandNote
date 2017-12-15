@@ -21,6 +21,14 @@ sudo spctl —master-disable
 
 2. git push origin tag名字
 
+3. git tag -l  查看所有tag
+
+## 删除tag
+
+1. git tag -d tag名称   删除本地tag 
+
+2. git push origin --delete tag "tag名称"  删除远程tag
+
 ## 使用svn后，xcode修改文件，类名后面不显示**M**
 在工作目录下执行：svn upgrade
 
