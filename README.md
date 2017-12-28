@@ -50,3 +50,10 @@ gem env
 
 ## 更新一下gem版本
 $ sudo gem update –system
+
+## 每次部署执行hexo deploy都需要输入密码
+
+每次部署执行hexo deploy都需要输入密码，但我明明已经在Github上设置了项目的Deploy keys了。用了一年多了，但最近突然就需要输入密码。最后，修改配置文件**_config.yml**中的deploy，将**repo: git@github.com:XibHe/XibHe.github.io**改为**repo: https://github.com/XibHe/XibHe.github.io**就解决了这个问题。
+
+[参考](https://segmentfault.com/a/1190000005125610)
+[参考](https://www.jianshu.com/p/f8b6717e1238)
