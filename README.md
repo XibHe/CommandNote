@@ -60,3 +60,17 @@ $ sudo gem update –system
 [https://segmentfault.com/a/1190000005125610](https://segmentfault.com/a/1190000005125610)
 
 [https://www.jianshu.com/p/f8b6717e1238](https://www.jianshu.com/p/f8b6717e1238)
+
+## 彻底卸载Homebrew(慎用!!!)
+ 
+> $ cd `brew --prefix`
+
+> $ rm -rf Cellar$ brew prune
+
+> $ rm -rf Library .git .gitignore bin/brew README.md share/man/man1/brew
+
+> $ rm -rf ~/Library/Caches/Homebrew
+
+重装Homebrew
+
+> ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
