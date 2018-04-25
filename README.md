@@ -60,3 +60,16 @@ $ sudo gem update –system
 [https://segmentfault.com/a/1190000005125610](https://segmentfault.com/a/1190000005125610)
 
 [https://www.jianshu.com/p/f8b6717e1238](https://www.jianshu.com/p/f8b6717e1238)
+
+## 关于使用 cocoapods 导入 Masonry 后，编译报错的问题
+
+```objectivec
+-[UITextField mas_makeConstraints:]: unrecognized selector
+
+```
+
+在 *Xcode* ---> *Build Settings* ---> *Other Linker Flags* 增加环境变量  
+
+```
+$(inherited)
+```
