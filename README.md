@@ -73,3 +73,38 @@ $ sudo gem update –system
 ```
 $(inherited)
 ```
+
+## pod install 时报错 ruby_executable_hooks:15:in `eval'
+
+如下，
+
+```
+from /Users/mac/.rvm/rubies/ruby-2.2.0/lib/ruby/site_ruby/2.2.0/rubygems/dependency.rb:320:in `to_spec'
+
+from /Users/mac/.rvm/rubies/ruby-2.2.0/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_gem.rb:65:in `gem'
+
+from /usr/local/bin/pod:22:in `'
+
+from /Users/mac/.rvm/gems/ruby-2.2.0@global/bin/ruby_executable_hooks:15:in `eval'
+```
+
+解决方法，安装最新的ruby运行这些命令。具体步骤，依次输入以下命令：
+
+* rvm install 2.2.10
+
+* rvm use 2.2.10
+
+* rvm use 2.2.10 --default //!设置2.2为运行的默认版本!
+
+一旦安装在您的系统中，请执行以下步骤：
+
+* sudo gem install activesupport -v 4.2.6
+
+* sudo gem install cocoapods
+
+* pod setup
+
+
+
+
+
