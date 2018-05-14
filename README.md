@@ -105,6 +105,21 @@ from /Users/mac/.rvm/gems/ruby-2.2.0@global/bin/ruby_executable_hooks:15:in `eva
 * pod setup
 
 
+## add nvm environment variable "This loads nvm"
 
+* $ sudo vi ~/.bash_profile
+* 插入并新增
+
+```
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+```
+
+* :wq
+* $ source ～/.bash_profile
+
+参考: 
+
+[Unterminated substitute pattern #1083](https://github.com/creationix/nvm/issues/1083)
 
 
