@@ -122,4 +122,34 @@ export NVM_DIR="$HOME/.nvm"
 
 [Unterminated substitute pattern #1083](https://github.com/creationix/nvm/issues/1083)
 
+## nvm 管理不同的 node 版本
+
+> nvm ls-remote  查看可用版本
+> 
+> nvm ls  查看当前可用版本
+> 
+> nvm use <version> 切换版本
+
+不过此时，当新建一个shell窗口时，输入 node -v 当前版本号仍然是以前的。
+这是因为利用 nvm use 指令只会在当前的shell生效，当你开了新的shell就会发现$PATH的值的值已经不包含刚才设定的node目录了。
+
+要解决这个问题需要利用命令：
+
+> nvm alias default <version>
+
+来设置一个预设的node版本。此时，再开启一个新的shell窗口，就能直接看到修改后的shell版本了。
+
+参考：
+
+[mac中利用NVM管理不同node版本的方法详解](http://www.jb51.net/article/127739.htm)
+
+
+
+
+
+
+
+
+
+ 
 
